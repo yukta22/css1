@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu list</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body{
+        margin: 3px;
+      }
+      .cont{
+        overflow: hidden;
+        background-color: #333;
+        margin-top: 10px;
+      }
+
+      .cont ul li{
+        padding-left: 0;
+        display: inline;
+        text-decoration: none;
+      }
+
+      .cont a{    
+        color:#f2f2f2;
+        text-align: center;
+        padding: 42px;
+        text-decoration: none;
+        font-size: 18px;    
+      }
+
+      .cont a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      @media screen and (max-width: 600px) {
+        .cont{
+          /* float: left; */
+          display: block;
+        }
+    
+        .cont a{
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div>
+          <a href="index.html"><img src="img/download.jpeg" alt="logo" width="80px" height="65px"></a>
+        </div>
+        
+        <div class="link"> 
+          <p><a href="">Home</a></p>
+          <p><a href="html.html">HTML</a></p>
+          <p><a href="css.html">CSS</a></p>
+          <p><a href="">Bootstrap</a></p>
+          <p><a href="">JavaScript</a></p>
+          <p><a href="">JQuery</a></p>
+          <p><a href="">Mini Project</a></p>
+          <p><a href="">SQL</a></p>
+        </div>
+        
+      </div>
+      
+      <div class="main">
+        <div class="leftbar">
+          <ul>
+            <li>Day 4</li>
+            <ul type="circle">
+                <li>Assignment</li>
+                <ul type="square">
+                    <li><a href="menulist.html">Assignment 1</a></li>
+                    <li><a href="task2.html">Assignment 2</a></li>
+                    
+                </ul>
+                <li>Practice</li>
+                <ul type="square">
+                    <li><a href="p1.html">Practice 1</a></li>
+                    <li><a href="p2.html">Practice 2</a></li>
+                </ul>
+            </ul>
+            
+            <li style="margin-top: 30px;">Day 5</li>
+            <ul type="circle">
+                <li>Assignment</li>
+                <ul type="square">
+                    <li><a href="img_gallery.html">Assignment 3</a></li>
+                    
+                </ul>
+                <li>Practice</li>
+                <ul type="square">
+                    <li><a href="p3.html">Practice 1</a></li>
+                    <li><a href="p1.html">Practice 2</a></li>
+                </ul>
+            </ul>
+          </ul>
+        </div>
+        <div class="about">  
+          <div class="cont">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <li><a href="#help" style="margin-right: 30px;">Help</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div id="app"></div>
+    <script type="module" src="/main.js"></script> -->
+  </body>
+</html>
